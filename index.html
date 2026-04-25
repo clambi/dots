@@ -3,7 +3,39 @@
   <head>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
   </head>
-  <body style="margin:0; overflow:hidden;">
-    <script src="sketch.js"></script>
-  </body>
+  
+  <body style="margin:0; overflow:hidden; font-family:sans-serif;">
+
+  <!-- Your p5 sketch -->
+  <script src="sketch.js"></script>
+
+  <!-- Content layer -->
+  <div style="
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    pointer-events:none;
+  ">
+
+    <div style="
+      text-align:center;
+      color:black;
+      background: rgba(255,255,255,0.15);
+      padding:30px;
+      border-radius:12px;
+      pointer-events:auto;
+    ">
+      <h1>Amber ✨</h1>
+      <p>This is my interactive background</p>
+      <button>Click me</button>
+    </div>
+
+  </div>
+
+</body>
 </html>
